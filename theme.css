@@ -1,0 +1,163 @@
+/* ====================================================================
+ * Behbahans Night - Obsidian Theme
+ * Aesthetic: Deep Midnight Obsidian (#08090C / #0B0E14) & Sky-Blue (#38BDF8)
+ * ==================================================================== */
+
+.theme-dark {
+  color-scheme: dark;
+
+  /* Color Palette */
+  --color-base-00: #08090C;
+  --color-base-05: #090C10;
+  --color-base-10: #0B0E14;
+  --color-base-20: #0D1017;
+  --color-base-25: #121622;
+  --color-base-30: #141824;
+  --color-base-35: #1E2538;
+  --color-base-40: #242F45;
+  --color-base-50: #5A6275;
+  --color-base-60: #7E8696;
+  --color-base-70: #A0AAB8;
+  --color-base-100: #F0F2F5;
+
+  --color-red: #FF5C6C;
+  --color-orange: #F59E0B;
+  --color-yellow: #FBBF24;
+  --color-green: #3BD671;
+  --color-cyan: #22D3EE;
+  --color-blue: #38BDF8;
+  --color-purple: #9D65FF;
+  --color-pink: #C499FF;
+
+  /* Accent */
+  --accent-h: 199;
+  --accent-s: 93%;
+  --accent-l: 60%;
+  --interactive-accent: #0284C7;
+  --interactive-accent-hsl: 199, 98%, 39%;
+  --interactive-accent-hover: #38BDF8;
+  --text-accent: #38BDF8;
+  --text-accent-hover: #67E8F9;
+
+  /* Backgrounds */
+  --background-primary: #0B0E14;
+  --background-primary-alt: #08090C;
+  --background-secondary: #090C10;
+  --background-secondary-alt: #0D1017;
+  --background-modifier-hover: rgba(30, 37, 56, 0.72);
+  --background-modifier-active-hover: #242F45;
+  --background-modifier-border: #1E2538;
+  --background-modifier-border-hover: #283149;
+  --background-modifier-border-focus: #38BDF8;
+  --background-modifier-form-field: #121622;
+  --background-modifier-message: #141824;
+  --background-modifier-success: #10B981;
+  --background-modifier-error: #EF4444;
+
+  /* Typography */
+  --text-normal: #F0F2F5;
+  --text-muted: #A0AAB8;
+  --text-faint: #7E8696;
+  --text-on-accent: #FFFFFF;
+  --text-highlight-bg: rgba(56, 189, 248, 0.22);
+  --text-selection: rgba(56, 189, 248, 0.25);
+
+  /* Headings */
+  --h1-color: #FFFFFF;
+  --h2-color: #67E8F9;
+  --h3-color: #38BDF8;
+  --h4-color: #C499FF;
+  --h5-color: #5EEAD4;
+  --h6-color: #A0AAB8;
+
+  /* Links & Tags */
+  --link-color: #38BDF8;
+  --link-color-hover: #67E8F9;
+  --link-external-color: #5EEAD4;
+  --link-external-color-hover: #67E8F9;
+  --link-unresolved-color: #7E8696;
+
+  --tag-color: #38BDF8;
+  --tag-background: rgba(56, 189, 248, 0.12);
+  --tag-background-hover: rgba(56, 189, 248, 0.22);
+  --tag-border-width: 1px;
+  --tag-border-color: rgba(56, 189, 248, 0.25);
+
+  /* Code & Syntax */
+  --code-background: #08090C;
+  --code-normal: #E2E8F0;
+  --code-comment: #5A6275;
+  --code-function: #38BDF8;
+  --code-keyword: #9D65FF;
+  --code-important: #FF5C6C;
+  --code-operator: #67E8F9;
+  --code-property: #5EEAD4;
+  --code-punctuation: #7E8696;
+  --code-string: #3BD671;
+  --code-tag: #FF5C6C;
+  --code-value: #FBBF24;
+
+  /* UI Components */
+  --ribbon-background: #08090C;
+  --ribbon-background-collapsed: #08090C;
+  --status-bar-background: #08090C;
+  --status-bar-border-color: #1E2538;
+  --titlebar-background: #08090C;
+  --titlebar-background-focused: #08090C;
+  --tab-container-background: #08090C;
+  --tab-background-active: #0B0E14;
+  --tab-text-color-focused-active: #38BDF8;
+  --tab-outline-color: #1E2538;
+  --divider-color: #1E2538;
+  --nav-item-background-active: rgba(56, 189, 248, 0.14);
+  --nav-item-color-active: #38BDF8;
+  --nav-item-background-hover: #1E2538;
+  --modal-background: #121622;
+  --modal-border-color: #1E2538;
+  --prompt-border-color: #283149;
+  --blockquote-border-color: #38BDF8;
+  --blockquote-background-color: #0D1017;
+  --table-header-background: #121622;
+  --table-border-color: #1E2538;
+  --checkbox-color: #38BDF8;
+  --checkbox-color-hover: #67E8F9;
+  --checkbox-border-color: #334155;
+  --graph-line: #1E2538;
+  --graph-node: #38BDF8;
+  --graph-node-unresolved: #5A6275;
+  --graph-node-focused: #67E8F9;
+  --graph-node-tag: #9D65FF;
+  --graph-node-attachment: #3BD671;
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: #1E2538;
+  --scrollbar-active-thumb-bg: #283149;
+}
+
+/* Polish: Active Nav Accent Bar & Code Block Framing */
+.theme-dark .nav-file-title.is-active {
+  border-left: 2px solid #38BDF8;
+  border-radius: 0 6px 6px 0;
+}
+
+.theme-dark .markdown-rendered pre,
+.theme-dark .cm-s-obsidian .HyperMD-codeblock-bg {
+  background-color: #08090C;
+  border: 1px solid #1E2538;
+}
+
+.theme-dark .markdown-rendered blockquote {
+  background-color: #0D1017;
+  border-left: 3px solid #38BDF8;
+  padding: 8px 14px;
+  border-radius: 0 8px 8px 0;
+}
+
+.theme-dark .callout {
+  background-color: #121622;
+  border: 1px solid #1E2538;
+  border-radius: 8px;
+}
+
+.theme-dark .workspace-tab-header.is-active {
+  border-top: 2px solid #38BDF8;
+}
